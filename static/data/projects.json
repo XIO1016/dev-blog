@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Render Smooth Image React",
+    "description": "An Open-source lightweight and zero dependency image component for enhanced image rendering in React applications",
+    "image": "../images/smooth_image.png",
+    "links": {
+      "live": "https://www.npmjs.com/package/render-smooth-image-react",
+      "github": "https://github.com/KRRISH96/render-smooth-image-react"
+    },
+    "tags": ["react", "npm", "javascript", "sass"]
+  }
+]

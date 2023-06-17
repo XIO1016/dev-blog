@@ -1,0 +1,143 @@
+:root {
+  // Colors
+  --dark: #0D1219;
+  --dark-secondary: #1B293C;
+  --dark-blue: #084177;
+  --bluish: #EEF;
+  --skyblue: #06CDFF;
+  --orange: #FF9000;
+  --white: #FFF;
+  --white-secondary: #EEE;
+  --black: #000;
+  --black-secondary: rgba(0,0,0,0.8);
+  --grey: #868E95;
+  --greyish: #C2CCD7;
+  --greyish-secondary: #C4C4C4;
+  --pink: #9C27B0;
+  --violet: #323EDD;
+  --moon: rgba(196, 196, 196, 0.7);
+  --moon-shadow: rgba(255, 255, 255, 0.75);
+  --sun: #F0DB4F;
+  --sun-shadow: rgba(255, 193, 7, 1);
+  --shadow: 0 0 1rem 0.2rem  var(--dark-secondary);
+  --code-bg: rgba(15, 76, 117, 0.5);
+
+  // Theme defaults - defauted to dark theme
+  --bg: var(--dark);
+  --bg-invert: var(--white);
+  --bg-secondary: var(--dark-secondary);
+  --color: var(--greyish);
+  --color-invert: var(--dark);
+  --color-secondary: var(--greyish-secondary);
+
+  --link: var(--skyblue);
+  --link-active: var(--orange);
+
+  --planet-bg: var(--moon);
+  --planet-shadow: var(--moon-shadow);
+
+  // Fonts
+  --font-72: 4.5rem;
+  --font-48: 3rem;
+  --font-40: 2.5rem;
+  --font-36: 2.25rem;
+  --font-32: 2rem;
+  --font-28: 1.75rem;
+  --font-24: 1.5rem;
+  --font-20: 1.25rem;
+  --font-16: 1rem;
+  --font-14: 0.875rem;
+  --font-12: 0.75rem;
+
+  // Spacing
+  --s-0_25: 0.25rem;
+  --s-0_5: 0.5rem;
+  --s-0_75: 0.75rem;
+  --s-1: 1rem;
+  --s-1_25: 1.25rem;
+  --s-1_5: 1.5rem;
+  --s-1_75: 1.75rem;
+  --s-2: 2rem;
+  --s-2_25: 2.25rem;
+  --s-2_5: 2.5rem;
+  --s-2_75: 2.75rem;
+  --s-3: 3rem;
+  --s-3_25: 3.25rem;
+  --s-3_5: 3.5rem;
+  --s-3_75: 3.75rem;
+  --s-4: 4rem;
+  --s-4_25: 4.25rem;
+  --s-4_5: 4.5rem;
+  --s-4_75: 4.75rem;
+  --s-5: 5rem;
+}
+
+// Themes
+// Dark specific styles aren't necessary as theme is defaulted to dark
+@mixin light-theme {
+  --code-bg: #e0dede;
+  --bg: linear-gradient(var(--skyblue), var(--white) 20%);
+  --bg-invert: var(--dark);
+  --bg-secondary: var(--white);
+  --shadow: 0 0 1rem 0.2rem var(--white-secondary);
+  --color: var(--dark);
+  --color-invert: var(--white);
+  --color-secondary: var(--dark-secondary);
+  --planet-bg: var(--sun);
+  --planet-shadow: var(--sun-shadow);
+  --link: var(--violet);
+  --link-active: var(--pink);
+  .stars {
+    visibility: hidden;
+  }
+}
+
+#theme-light {
+  @include light-theme;
+}
+
+@media (prefers-color-scheme: light) {
+  #theme-system {
+    @include light-theme;
+  }
+}
+
+body {
+  background: var(--bg);
+  background-attachment: fixed;
+  color: var(--color) !important;
+  transition: background-color 0.2s linear;
+  a {
+    color: var(--link);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active, &.active {
+      color: var(--link-active);
+    }
+  }
+}
+
+.theme-switch-wrapper {
+  margin: 0 var(--s-1);
+  font-size: var(--font-16);
+  display: inline-flex;
+  border: 1px solid var(--color);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  .theme-btn {
+    background-color: var(--bg-secondary);
+    color: var(--color);
+    border: none;
+    cursor: pointer;
+    padding: var(--s-0_25) var(--s-0_75);
+    &.active {
+      background-color: var(--bg-invert);
+      color: var(--color-invert)
+    }
+  }
+}
