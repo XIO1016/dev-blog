@@ -1185,19 +1185,12 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.21.5", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.21.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.22.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.5.tgz#8564dd588182ce0047d55d7a75e93921107b57ec"
   integrity sha512-ecjvYlnAaZ/KVneE/OdKYBYfgXV3Ptu6zQWmgEF7vwKhQnvVS6bjMD2XYgj+SNvQ1GfK/pjgokfPkC/2CO8CuA==
   dependencies:
     regenerator-runtime "^0.13.11"
-
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.3.4", "@babel/runtime@^7.8.4":
-  version "7.15.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
-  integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
-  dependencies:
-    regenerator-runtime "^0.13.4"
 
 "@babel/template@^7.20.7", "@babel/template@^7.22.5":
   version "7.22.5"
@@ -6969,10 +6962,10 @@ gatsby-plugin-mdx@^5.11.0:
     unist-util-visit "^4.1.2"
     vfile "^5.3.7"
 
-gatsby-plugin-nprogress@^5.10.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-5.10.0.tgz#c6c90f4d255b90e1a81098ea2cd16a3414efee2b"
-  integrity sha512-o3McpqiOZOu3HT1rck/5zeKMZXNAMgk4nmUM77RltJO6yboUvbTnqyYuoc3IIDycf52cIv5/thDiHofDHPiPyw==
+gatsby-plugin-nprogress@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-5.11.0.tgz#8ca24e6b35f6c1b2a436898de768f0192b0116a5"
+  integrity sha512-8ClaUeoafh+3azdM++8KU9SlAyhc0EdbMKgf9NEXXP5ao2dA6Wz/kLSe31CAUFWr7Ga46P6YhPa6PpfMtuXjUQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     accessible-nprogress "^2.1.2"
