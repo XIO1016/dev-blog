@@ -20,7 +20,7 @@
     "gatsby-remark-autolink-headers": "^6.11.0",
     "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-source-filesystem": "^5.10.0",
-    "gatsby-transformer-json": "^5.10.0",
+    "gatsby-transformer-json": "^5.11.0",
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
     "node-sass": "^8.0.0",
