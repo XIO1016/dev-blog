@@ -5,21 +5,21 @@ import { isDayTime, isWindowAvailable } from "../../helpers/utils";
 
 function Theme() {
   const defaultTheme =
-    isWindowAvailable() && localStorage.getItem(THEME_PREFERENCE_KEY)
-      ? localStorage.getItem(THEME_PREFERENCE_KEY)
-      : THEMES.dark;
+    // isWindowAvailable() && localStorage.getItem(THEME_PREFERENCE_KEY)
+    //   ? localStorage.getItem(THEME_PREFERENCE_KEY)
+       THEMES.light;
   const [theme, setTheme] = useState(defaultTheme);
 
-  useEffect(() => {
-    switchTheme(theme);
-  }, [theme]);
+  // useEffect(() => {
+  //   switchTheme(theme);
+  // }, [theme]);
 
   const switchTheme = themePreference => {
     let themeToApply = themePreference;
 
-    if (themePreference === THEMES.auto) {
-      themeToApply = isDayTime() ? THEMES.light : THEMES.dark;
-    }
+    // if (themePreference === THEMES.auto) {
+    //   themeToApply = isDayTime() ? THEMES.light : THEMES.dark;
+    // }
 
     document.body.setAttribute("data-theme", themePreference);
     document.body.setAttribute("id", `theme-${themeToApply}`);

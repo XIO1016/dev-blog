@@ -10,6 +10,10 @@ $github-icon-size: 3rem;
     padding: 2rem 1rem;
     position: relative;
   }
+  &__period {
+    //padding: 2rem 1rem;
+    position: relative;
+  }
   &__title {
     text-transform: capitalize;
     margin-bottom: var(--s-0_75);

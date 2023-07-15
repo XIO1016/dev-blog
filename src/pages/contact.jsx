@@ -4,12 +4,8 @@ import SEO from "../components/seo";
 import Emoji from "../components/presentational/emoji";
 import ContactForm from "../components/contact/form";
 import {
-  FaTwitter,
   FaGithub,
-  FaLinkedin,
   FaDev,
-  FaMedium,
-  FaStackOverflow,
 } from "react-icons/fa";
 import ExternalLink from "../components/presentational/externalLink";
 import { PROFILE_LINKS } from "../helpers/constants";

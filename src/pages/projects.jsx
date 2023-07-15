@@ -17,6 +17,7 @@ const ProjectsPage = () => {
           node {
             id
             name
+            period
             description
             links {
               live
@@ -49,15 +50,11 @@ const ProjectsPage = () => {
         </div>
         <div className="banner">
           <p>
-            More on&nbsp;
+            The details are at&nbsp;
             <ExternalLink href={PROFILE_LINKS.github}>GitHub</ExternalLink>.
-            Also, I do enjoy writing tiny bits and pieces of code when bored.
           </p>
           <p>
-            Check them out on&nbsp;
-            <ExternalLink href={PROFILE_LINKS.codepen}>Codepen</ExternalLink>
-            &nbsp;and&nbsp;
-            <ExternalLink href={PROFILE_LINKS.repl}>Repl.it</ExternalLink>
+            Please come and see us anytime!
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./index.scss";
 
 const ProjectCard = ({
-  project: { id, name, description, links, tags, image },
+  project: { id, name, period, description, links, tags, image },
 }) => (
   <div key={id} className="card project-card">
     <GatsbyImage
@@ -38,6 +38,7 @@ const ProjectCard = ({
         </ExternalLink>
       )}
       <Tags tags={tags} />
+      <p className="project-card__period">{period}</p>
       <p className="project-card__description">{description}</p>
     </div>
   </div>

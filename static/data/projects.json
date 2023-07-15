@@ -1,12 +1,167 @@
 [
   {
-    "name": "Render Smooth Image React",
-    "description": "An Open-source lightweight and zero dependency image component for enhanced image rendering in React applications",
-    "image": "../images/smooth_image.png",
+    "name": "Children's Shopping Platform BO",
+    "description": "I participated in the production of backoffice for the ZaeZae Children's Complex Shopping Platform conducted by startup GeeksLoft.\n     I was in charge of the BO front using React and made a backend api with Django and postgresql.",
+    "period": "2023.03.01-06.30",
+    "image": "../images/zzbo_thumbnail.png",
     "links": {
-      "live": "https://www.npmjs.com/package/render-smooth-image-react",
-      "github": "https://github.com/KRRISH96/render-smooth-image-react"
+      "live": "",
+      "github": "https://github.com/XIO1016/ZZ"
     },
-    "tags": ["react", "npm", "javascript", "sass"]
+    "tags": [
+      "React",
+      "Bootstrap",
+      "Django",
+      "Postgresql"
+    ]
+  },{
+    "name": "Children's Shopping Platform App",
+    "description": "I participated in the production of the app for the ZaeZae Children's Complex Shopping Platform conducted by startup GeeksLoft.\n    I was in charge of making apps using platters, and I made backend api with Django and postgresql.",
+    "period": "2023.03.01-06.30",
+    "image": "../images/zz_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/ZZ"
+    },
+    "tags": [
+      "Flutter",
+      "Getx",
+      "Django",
+      "Postgresql",
+      "Firebase"
+    ]
+  },  {
+    "name": "App Bogeo",
+    "description": "Application that aims to prevent misuse of medicines through medication management and drug identification functions.\nI created an app using Flutter and collaborated with spring and ml.",
+    "period": "2022.09.01-12.21",
+    "image": "../images/bogeo_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/bogeo"
+    },
+    "tags": [
+      "Flutter",
+      "Getx",
+      "Spring",
+      "ML"
+    ]
+  },
+  {
+    "name": "App Gamehaeduo",
+    "description": "Application that brings together countless people looking for a game duo and makes it easy to find them. It helps to discover value between people in the growing game industry.",
+    "period": "2022.11.04-12.09",
+    "image": "../images/gamehaeduo_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/gamehaeduo"
+    },
+    "tags": [
+      "Flutter",
+      "Getx",
+      "Spring"
+    ]
+  },
+  {
+    "name": "Personal Blog",
+    "description": "My personal blog for sharing acknowledgement.",
+    "period": "2022.01.01~",
+    "image": "../images/xioblog_thumbnail.png",
+    "links": {
+      "live": "https://xio1016.site/",
+      "github": "https://github.com/XIO1016/blog.git"
+    },
+    "tags": [
+      "React",
+      "Gatsby"
+    ]
+  },  {
+    "name": "GDSC CAUCON page",
+    "description": "Page for GDSC CAUCON.",
+    "period": "2022.05.21-2022.07.30",
+    "image": "../images/caucon_thumbnail.png",
+    "links": {
+      "live": "https://gdsc-cau.github.io/CAUCON/",
+      "github": "https://github.com/GDSC-CAU/CAUCON"
+    },
+    "tags": [
+      "Nuxt",
+      "TailwindCSS"
+    ]
+  },
+  {
+    "name": "App Hyojason",
+    "description": "Applications for bridging the digital divide between generations through quality education.",
+    "period": "2022.01.26-02.04",
+    "image": "../images/hyojason_thumbnail.png",
+    "links": {
+      "live": "https://gdsckoreahackathon2022.github.io/#/prize",
+      "github": "https://github.com/gdsckoreahackathon2022/23_hyojason"
+    },
+    "tags": [
+      "PM",
+      "Flutter",
+      "Firebase"
+    ]
+  },
+  {
+    "name": "App Sharvet",
+    "description": "Applications for reducing carbon footprints by exchanging food waste into sustainable resources.",
+    "period": "2022.02.02-03.27",
+    "image": "../images/sharvet_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/Solution-Challenge-2022-Sharvet"
+    },
+    "tags": [
+      "PM",
+      "Flutter",
+      "Firebase"
+    ]
+  },
+  {
+    "name": "App Blueming Idea",
+    "description": "Applications for increasing the efficiency of mental illness prevention, diagnosis, treatment, and post-management through emotional diary writing, a type of cognitive behavioral therapy (CBT).",
+    "period": "2022.05.02-06.29",
+    "image": "../images/blueming_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/smartcity"
+    },
+    "tags": [
+      "PM",
+      "Planning"
+    ]
+  },
+  {
+    "name": "Self-Driving Logistics Robot, Tail",
+    "description": "AGV robot that can self-position and register and track users in indoor and outdoor environments where various logistics are required to be carried",
+    "period": "2022.04.15-11.30",
+    "image": "../images/smartict_thumbnail.png",
+    "links": {
+      "live": "https://papersearch.net/thesis/article.asp?key=3988654",
+      "github": "https://github.com/XIO1016/tail"
+    },
+    "tags": [
+      "CV",
+      "ML",
+      "HW",
+      "UWB"
+    ]
+  },
+  {
+    "name": "Undergraduate research student",
+    "description": "I studied as an undergraduate research student, in the Cvml lab.",
+    "period": "2022.07.01-08.30",
+    "image": "../images/cvml_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": ""
+    },
+    "tags": [
+      "CV",
+      "ML",
+      "study",
+      "mentoring"
+    ]
   }
 ]

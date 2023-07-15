@@ -19,25 +19,28 @@
   --moon-shadow: rgba(255, 255, 255, 0.75);
   --sun: #F0DB4F;
   --sun-shadow: rgba(255, 193, 7, 1);
-  --shadow: 0 0 1rem 0.2rem  var(--dark-secondary);
+  //--shadow: 0 0 1rem 0.2rem  var(--dark-secondary);
   --code-bg: rgba(15, 76, 117, 0.5);
 
   // Theme defaults - defauted to dark theme
-  --bg: var(--dark);
-  --bg-invert: var(--white);
-  --bg-secondary: var(--dark-secondary);
-  --color: var(--greyish);
-  --color-invert: var(--dark);
-  --color-secondary: var(--greyish-secondary);
+  --bg:var(--white);
+  //--bg: linear-gradient(var(--skyblue), var(--white) 10%);
+  --bg-invert: var(--dark);
+  --bg-secondary: var(--white);
+  --shadow: 0 0 1rem 0.2rem var(--white-secondary);
+  --color: var(--dark);
+  --color-invert: var(--white);
+  --color-secondary: var(--dark-secondary);
 
-  --link: var(--skyblue);
-  --link-active: var(--orange);
+  --link: var(--black);
+  --link-active: var(--violet);
 
-  --planet-bg: var(--moon);
-  --planet-shadow: var(--moon-shadow);
+  //--planet-bg: var(--moon);
+  //--planet-shadow: var(--moon-shadow);
 
   // Fonts
   --font-72: 4.5rem;
+  --font-56: 3.5rem;
   --font-48: 3rem;
   --font-40: 2.5rem;
   --font-36: 2.25rem;
@@ -76,15 +79,16 @@
 // Dark specific styles aren't necessary as theme is defaulted to dark
 @mixin light-theme {
   --code-bg: #e0dede;
-  --bg: linear-gradient(var(--skyblue), var(--white) 20%);
+  --bg:var(--white);
+  //--bg: linear-gradient(var(--skyblue), var(--white) 10%);
   --bg-invert: var(--dark);
   --bg-secondary: var(--white);
   --shadow: 0 0 1rem 0.2rem var(--white-secondary);
   --color: var(--dark);
   --color-invert: var(--white);
   --color-secondary: var(--dark-secondary);
-  --planet-bg: var(--sun);
-  --planet-shadow: var(--sun-shadow);
+  //--planet-bg: var(--sun);
+  //--planet-shadow: var(--sun-shadow);
   --link: var(--violet);
   --link-active: var(--pink);
   .stars {

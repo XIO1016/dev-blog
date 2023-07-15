@@ -1,75 +1,90 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link} from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { APP_ROUTES, BLOG_SITE } from "../helpers/constants";
+import {APP_ROUTES, EMAIL} from "../helpers/constants";
 import Emoji from "../components/presentational/emoji";
-import ExternalLink from "../components/presentational/externalLink";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import {TypeAnimation} from "react-type-animation";
+import Skills from "../components/skills";
 
 const AboutPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      profileImage: file(relativePath: { eq: "images/profile_picture.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 200, height: 200, placeholder: BLURRED)
-        }
-      }
-    }
-  `);
-  return (
-    <Layout>
-      <SEO title="About" />
-      <div className="about-page">
-        <h1 className="page-title">
-          Hey There
-          <Emoji label="Waving Hand" emoji={"👋🏻"} />
-        </h1>
-        <div className="profile-image-container">
-          <GatsbyImage
-            image={getImage(data.profileImage)}
-            alt="Xio's Profile Picture"
-            className="profile-image"
-          />
-        </div>
-        <p>I'm Xio, FullStack Web Developer from India.</p>
-        <p>
-          I architect and develop full stack web applications using React,
-          JavaScript, and Ruby on Rails. I love converting mockups into pixel
-          perfect technical implementations. I also like to stay on top of the
-          latest trends and techniques by consuming podcasts, articles, videos,
-          and mother google!
-        </p>
-        <p>
-          When I’m not coding you can catch me cycling around Bangalore or
-          cooking up some yummy Indian food!
-        </p>
-        <br />
-        <ul>
-          <li>
-            <Emoji label="Waving Hand" emoji={" 👋🏻 "} />
-            <Link to={APP_ROUTES.contact} data-cy={APP_ROUTES.contact}>
-              Say Hello!
-            </Link>
-          </li>
-          <li>
-            <Emoji label="Writing Hand" emoji={" ✍🏻 "} />
-            <ExternalLink href={BLOG_SITE}>Read My Blogs</ExternalLink>
-            <small className="external-link-icon">
-              <FaExternalLinkAlt />
-            </small>
-          </li>
-          <li>
-            <Emoji label="Laptop" emoji={" 💻 "} />
-            <Link to={APP_ROUTES.projects} data-cy={APP_ROUTES.projects}>
-              Some of My Work!
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </Layout>
-  );
+  //   const data = useStaticQuery(graphql`
+  //   query {
+  //     profileImage: file(relativePath: { eq: "images/profile_picture.png" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(layout: FIXED, width: 200, height: 200, placeholder: BLURRED)
+  //       }
+  //     }
+  //   }
+  // `);
+    return (
+        <Layout>
+            <SEO title="About"/>
+            <div className="about-page">
+                <div className="typer">
+                <TypeAnimation
+                    sequence={[
+                        "Welcome! 👋🏻",
+                        1000,
+                        "I am XIO🌊",
+                        1000,
+                        // "My name is Songgyeong Oh",
+                        "Software Developer 💻",
+                        1000,
+                        "Like to Learn ❤️",
+                        1000,
+                        "A Growing Programmer 🚀",
+                        1000,
+                        "This is a space for storing and sharing knowledge ☺️",
+                        1500,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    style={{fontSize: '2em', display: 'inline-block', fontWeight: 'bold'}}
+                    repeat={Infinity}
+                />
+                </div>
+                {/*<div className="profile-image-container">*/}
+                {/*  <GatsbyImage*/}
+                {/*    image={getImage(data.profileImage)}*/}
+                {/*    alt="Xio's Profile Picture"*/}
+                {/*    className="profile-image"*/}
+                {/*  />*/}
+                {/*</div>*/}
+                <div className="content">
+                    <h2>XIO 🌊</h2>
+                    <p>
+                        I majored in Computer Science and Engineering. I'm currently interested in the
+                        Backend and Cloud Engineering.
+                        I'm always thinking about designing good software.
+                        I like to learn new things and grow.
+                        I want to be a developer who is not satisfied with today and always develops myself for a better
+                        tomorrow.
+                    </p>
+                    <Skills />
+                </div>
+                <br/>
+                <ul>
+                    <li>
+                        <Emoji label="Email" emoji={" 📧 "}/>
+                        {EMAIL.email}
+                    </li>
+                    <li>
+                        <Emoji label="Writing Hand" emoji={" ✍🏻 "}/>
+                        <Link to={APP_ROUTES.blog} data-cy={APP_ROUTES.blog}>
+                            Come to see my blog posts!
+                        </Link>
+                    </li>
+                    <li>
+                        <Emoji label="Laptop" emoji={" 💻 "}/>
+                        <Link to={APP_ROUTES.projects} data-cy={APP_ROUTES.projects}>
+                            Come to see my works!
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        </Layout>
+    );
 };
 
 export default AboutPage;
