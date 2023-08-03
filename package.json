@@ -6,6 +6,7 @@
   "author": "Xio",
   "dependencies": {
     "gatsby": "^5.10.0",
+    "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-force-trailing-slashes": "^1.0.6",
     "gatsby-plugin-google-gtag": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
