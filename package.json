@@ -9,7 +9,7 @@
     "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-force-trailing-slashes": "^1.0.6",
     "gatsby-plugin-google-gtag": "^5.10.0",
-    "gatsby-plugin-image": "^3.10.0",
+    "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.10.0",
     "gatsby-plugin-mdx": "^5.11.0",
     "gatsby-plugin-nprogress": "^5.10.0",
