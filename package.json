@@ -39,7 +39,7 @@
     "chai": "^4.3.7",
     "chrome-launcher": "^0.15.2",
     "cypress": "^10.0.0",
-    "gatsby-cypress": "^3.10.0",
+    "gatsby-cypress": "^3.12.0",
     "husky": "^8.0.3",
     "lighthouse": "^10.2.0",
     "lighthouse-badges": "^1.1.13",
