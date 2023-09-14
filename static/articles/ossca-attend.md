@@ -7,7 +7,7 @@ description: 오픈소스 컨트리뷰션 아카데미 신청, 선발 그리고 
 img: ossca-attend.png
 author: XIO1016
 visibility: true
-main: true
+main: false
 ---
 
 
