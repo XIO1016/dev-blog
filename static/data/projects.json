@@ -1,5 +1,19 @@
 [
   {
+    "name": "App KnowSnap",
+    "description": "Application for easy and convenient review of learned knowledge (IT knowledge, algorithm problems, etc.) from anywhere.\nI created an app using Flutter, Spring and AWS",
+    "period": "2023.08.15-",
+    "image": "../images/knowsnap_thumbnail.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/KnowSnap"
+    },
+    "tags": [
+      "Flutter",
+      "Spring",
+      "Postgresql"
+    ]
+  },  {
     "name": "Children's Shopping Platform BO",
     "description": "I participated in the production of backoffice for the ZaeZae Children's Complex Shopping Platform conducted by startup GeeksLoft.\n     I was in charge of the BO front using React and made a backend api with Django and postgresql.",
     "period": "2023.03.01-06.30",
