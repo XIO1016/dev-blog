@@ -26,7 +26,7 @@ const ProjectsPage = () => {
             tags
             image {
               childImageSharp {
-                gatsbyImageData(layout: FIXED, width: 352, height: 176, placeholder: BLURRED)
+                gatsbyImageData(layout: FIXED, width: 352, height: 195, placeholder: BLURRED)
               }
             }
           }
