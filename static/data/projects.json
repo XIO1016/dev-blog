@@ -1,5 +1,20 @@
 [
   {
+    "name": "Terraform on Naver Cloud Open Source Contribution",
+    "description": "I made contributes such as typo correction and resource conversion to the terraform provider open source. It was an opportunity to get used to Cloud, Iac.",
+    "period": "2023.07.04-10.07",
+    "image": "../images/ossca-attend.png",
+    "links": {
+      "live": "",
+      "github": "https://github.com/XIO1016/OpenSource-Terraform-Ncloud"
+    },
+    "tags": [
+      "Go",
+      "Terraform",
+      "IaC",
+      "Cloud"
+    ]
+  },  {
     "name": "App KnowSnap",
     "description": "Application for easy and convenient review of learned knowledge (IT knowledge, algorithm problems, etc.) from anywhere.\nI created an app using Flutter, Spring and AWS",
     "period": "2023.08.15-",
